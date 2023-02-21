@@ -43,9 +43,10 @@ public class TestCCuentaTGA {
 
     @Test
     public void getNombre() {
-        CCuenta nom=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",3200,1);
-        String nombre=nom.getNombre();
-        assertEquals("Ana",nombre);
+        CCuenta nom = new CCuenta("Ana", "ES08-3456-2343-2345-1234-1234", 3200, 1);
+        String nombre = nom.getNombre();
+        assertEquals("Ana", nombre);
+
 
     }
 }
