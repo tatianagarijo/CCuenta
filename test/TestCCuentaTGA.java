@@ -17,6 +17,9 @@ public class TestCCuentaTGA {
         CCuenta ingrs=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",3200,1);
         assertEquals(3200,ingrs.getSaldo(),0);
 
+        CCuenta ingrsneg=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",100,1);
+        ingrsneg.ingresar(-6);
+        assertEquals(94,ingrsneg.getSaldo(),0);
     }
 
     @Test
