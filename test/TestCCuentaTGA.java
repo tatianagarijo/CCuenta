@@ -1,5 +1,7 @@
+import org.junit.Assert;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class TestCCuentaTGA {
@@ -11,7 +13,10 @@ public class TestCCuentaTGA {
     }
 
     @Test
-    public void ingresar() {
+    public void testingresarTGA() {
+        CCuenta ingrs=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",3200,1);
+        assertEquals(3200,ingrs.getSaldo(),0);
+
     }
 
     @Test
