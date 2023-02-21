@@ -24,6 +24,9 @@ public class TestCCuentaTGA {
 
     @Test
     public void retirar() {
+        CCuenta ret=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",500,1);
+        ret.retirar(250);
+        assertEquals(250,ret.getSaldo(),0);
     }
 
     @Test
