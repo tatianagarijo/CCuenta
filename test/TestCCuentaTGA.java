@@ -27,6 +27,10 @@ public class TestCCuentaTGA {
         CCuenta ret=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",500,1);
         ret.retirar(250);
         assertEquals(250,ret.getSaldo(),0);
+
+        CCuenta retneg=new CCuenta("Ana","ES08-3456-2343-2345-1234-1234",500,1);
+        retneg.retirar(2500);
+        assertEquals(-2000,retneg.getSaldo(),0);
     }
 
     @Test
